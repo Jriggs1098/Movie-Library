@@ -1,0 +1,601 @@
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: "Trebuchet MS", "Ariel";
+    background-color: #253963;
+    font-size: 18px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto;
+    text-align:center; 
+    position: relative;
+}
+
+/* Footer */
+#footer {
+    color: #a0a9bc;
+    padding: 10px;
+    padding-top: 10px;
+    margin: 5px;  
+    position: absolute;
+    bottom: 0%;
+    width: 98%;
+    right: .5%;
+}
+
+#footer hr {
+    margin-bottom: 10px;
+    background-color: #253963;
+    border-color: #d5d9f2;
+}
+
+/* Default style for links */
+a {
+    text-decoration: none;
+    color: #d5d9f2;
+}
+
+a:hover {
+    color: #a0a9bc;
+}
+
+/* Nav bar */
+.nav-bar {
+    background-image: linear-gradient(to right, #212c42 , #1f2d49);
+    border-bottom: 1px solid #a0a9bc;
+    color: #a0a9bc;
+    list-style: none;
+    padding: 20px 0 20px 0;
+    font-size: 24px;
+    text-align: right;
+}
+
+.nav-bar li {
+    display: inline-block;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.travel{
+    position: relative;
+    margin-left: 5px;
+    right: 6%;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #a0a9bc;
+}
+
+.nav-bar li a:hover {
+    color: #d5d9f2;
+}
+
+/* Logo */
+.logo {
+    padding: 20px 0 20px 0;
+    color: #a0a9bc;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    left: 11%;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #a0a9bc; 
+}
+
+.logo a:hover {
+    color: #d5d9f2;
+}
+
+/* Search bar */
+#search-img {
+    width: 7%;
+    padding-top: 5px;
+    position: relative;
+    top: 7px;
+    right: 43%;
+}
+
+#search-bar {
+    width: 60%;
+    height: 23px;
+    border-radius: 10px;
+    position: relative;
+    right: 42%;
+    bottom: 3px;
+    border: none;
+    background-color: #a0a9bc;
+    color: #1f2d49;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 5px;
+    opacity: .5;
+}
+
+#search-bar:focus {
+    outline: none;
+}
+
+/* Account */
+.account {
+    color: #d5d9f2;
+    font-family: "Trebuchet MS", "Ariel";
+    font-weight: bold;
+    float: right;
+    padding-right: 25px;
+    width: 100%;
+    border-bottom: 1px solid #a0a9bc;
+    padding: 10px;
+}
+
+.account p {
+    position: relative;
+    left:32%;
+    width: 100px;
+    display: inline-block;
+}
+
+.account a {
+    text-decoration: none;
+    color: #d5d9f2;
+}
+
+.account a:hover {
+    color: #a0a9bc;
+}
+
+.account-form {
+    color: #d5d9f2;
+    width: 40%;
+    position: relative;
+    left: 6%;
+}
+
+.account-form td {
+    text-align: left;
+    padding: 5px;
+    padding-bottom: 10px;  
+}
+
+.account-form input {
+    background-color: #212c42; 
+    padding: 2px;
+    color: #a0a9bc;
+    font-size: 16px;
+    border: 1px solid #a0a9bc;
+    width: 40%;
+    font-size: 16px;
+}
+
+.account-info {
+    float: right;
+    width: 50%;
+    margin-top: 17px;
+    position: relative;
+    right: 10%;
+}
+
+/* H1 for main divs */
+.content h1 {
+    color: #d5d9f2;
+    text-align: left;
+    position: relative;
+    width: 50%;
+    left: 29%;
+    padding-bottom: 3px;
+    margin: 5px;
+}
+
+/*General content */
+.content-row { 
+    position: relative;
+    left: 27%;
+    width: 50%;
+    min-height: 300px;
+    border-top: 1px solid #d5d9f2;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.content-row p {
+    color: #d5d9f2;
+    font-size: 24px;
+}
+
+/* Poster */
+.poster {
+    width: 130px;
+    height: 100%;
+}
+
+.blur-back {
+    height: 200px;
+    display: inline-block;
+    position: relative;
+    right: 5%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.blur-back img {
+    height: 200px;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+.blur-back:hover img {
+    filter:brightness(30%);
+    box-shadow: 0 0 16px #d5d9f2;
+}
+
+.blur-back h2, .blur-back h3{
+    position: absolute; 
+    top: 10%;
+    z-index: 1;
+    width: 100%;
+    color: #d5d9f2;
+    text-align: left;
+    font-size: 16px;
+    opacity: 0;
+    transition: .3s;
+    padding: 2px;
+}
+
+.blur-back:hover h2, .blur-back:hover h3 {
+    opacity: 1;
+}
+
+.blur-back h3 {
+    top:35%;
+}
+
+/* Error */
+#error {
+    padding-top: 10px;
+    margin: 5px;
+    font-size: 24px;
+    color: #d5d9f2;
+}
+
+/* Details */
+.detail-row h1 {
+    color: #d5d9f2;
+    text-align: left;
+    position: relative;
+    width: 50%;
+    left: 29%;
+    padding-bottom: 5px;
+    margin: 5px;
+}
+
+.detail-row {
+    margin-bottom: 400px;
+}
+
+#info {
+    color: #d5d9f2;
+    position: relative; 
+    float: right;
+    right: 33%;
+    margin-top: 20px;
+}
+
+#info td {
+    text-align: left;
+    padding-right: 10px;
+    width: 400px;
+}
+
+.title-info {
+    width: 20%;
+    height: 30px;
+    float: right;
+    color: #d5d9f2;
+    position: relative;
+    right: 40%;
+    padding-top: 20px;
+}
+
+.detail-row hr {
+    width: 50%;
+    margin-bottom: 5px;
+    background-color: #253963;
+    position: relative;
+    left: 27%;
+    border-color: #d5d9f2;
+}
+
+.poster-details {
+    width: 10%;
+    height: 100%;
+    margin-top: 25px;
+    position: relative;
+    right: 4.5%;
+}
+
+.return {
+    float: left;    
+    position: relative;
+    left: 30%;
+}
+
+.edit {
+    float: left;    
+    position: relative;
+    left: 34.6%;
+}
+
+/* Season select option */
+.change-season {
+    background-color: #212c42; 
+    color: #a0a9bc;
+    border: 1px solid #a0a9bc;
+    font-size: 16px;
+    position: relative;
+    right: 17.2%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+}
+
+.change-season:hover {
+    color: #d5d9f2;
+}
+
+#search-bar:focus {
+    outline: none;
+}
+
+/* Episode Poster */
+.tv-poster {
+    border-radius: 4px;
+    width: 150px;
+}
+
+.content {
+    padding-bottom: 30px;
+}
+
+.tv-row {
+    border-bottom: 1px solid #a0a9bc;
+    text-align: left;
+    margin: 5px;
+    padding: 5px;
+    padding-bottom: 20px;
+}
+
+.crop {
+    width: 151px;   
+    border-radius: 4px;
+    height: 114px;  
+    overflow: hidden;
+}
+
+.tv-row h2, .tv-row h3 { 
+    width: 25%;
+    color: #d5d9f2;
+    text-align: center;
+    font-size: 22px;
+    position: relative;
+    right: 4.5%;
+}
+
+.tv-row p {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;  
+}
+
+.tv-row .p2, .tv-row .p3 {
+    font-size: 17px;
+}
+
+.p1 {
+    width: 50%;  
+    float: right;
+    position: relative;
+    right: 30%;
+    margin-top: 28px;
+}
+
+.p2 {
+    width: 20%;
+    position: relative;
+    right: 2%;
+}
+
+.p3 {
+    position: relative;
+    width: 25%;
+    right: 4.5%;
+}
+
+/* Edit */
+.titles {
+    text-align: left;
+    width: 25%;
+    color: #d5d9f2;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    left: 2%;
+}
+
+.edit-info {
+    width: 50%;
+    position: relative;
+    float: right;
+    right: 22.9%; 
+    position: relative;
+}
+
+.edit-form input{
+    background-color: #212c42; 
+    padding: 2px;
+    color: #a0a9bc;
+    font-size: 16px;
+    border: 1px solid #a0a9bc;
+    font-size: 16px;
+    position: relative;
+    right: 37.5%;
+    border-radius: 4px;
+    margin-top: 5px;
+    width: 20%;
+    font-size: 16px;
+}
+
+.edit-form select {
+    background-color: #212c42; 
+    color: #a0a9bc;
+    border: 1px solid #a0a9bc;
+    font-size: 16px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.edit-form textarea {
+    background-color: #212c42; 
+    color: #a0a9bc;
+    font-size: 16px;
+    border-radius: 4px;
+    position: relative;
+    right: 31.8%;
+    border: 1px solid #a0a9bc;
+}
+
+.edit-form select:focus, .edit-form input:focus {
+    outline: none;
+}
+
+.edit-button {
+    margin-bottom: 5px;
+}
+
+.edit-button:hover {
+    color: #d5d9f2;
+}
+
+.tv-button {
+    position: relative;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #a0a9bc;
+    border-radius: 8px;
+}
+
+/* Add link */
+.add {    
+    position: relative;
+    right: 16.8%;
+}
+
+.add:hover {
+    color: #a0a9bc;
+}
+
+.error-link {
+    font-size: 24px;
+    position: relative;
+    right: 43.5%;
+}
+
+.library-add {
+    position: relative;
+    right: 2.3%;
+    padding: 5px;
+    border: 1px solid #a0a9bc;
+    border-radius: 8px;
+}
+
+/* Autosuggestion */
+#suggestionDiv {
+    position: absolute;
+    right: 11.1%;
+    background-color: #a0a9bc;
+    color: #1f2d49; 
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 9999;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: 1px solid rgba(0,0,0,.15);
+    box-shadow: 2px 10px 12px 2px rgba(0,0,0,.175);
+}
+
+#suggestionDiv span {
+    display: block;
+    padding: 4px 3px 4px 10px;
+    cursor: default;
+    min-width: 200px;
+}
+
+#suggestionDiv span:hover {
+    background-color: #d5d9f2;
+}
+
+#suggest-div {
+    position: absolute;
+    right: 65%;
+    background-color: #a0a9bc;
+    color: #1f2d49; 
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 9999;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: 1px solid rgba(0,0,0,.15);
+    box-shadow: 2px 10px 12px 2px rgba(0,0,0,.175);
+}
+
+#suggest-div span {
+    display: block;
+    padding: 4px 3px 4px 10px;
+    cursor: default;
+    min-width: 200px;
+}
+
+#suggest-div span:hover {
+    background-color: #d5d9f2;
+}
+
+#suggest-div-show {
+    position: absolute;
+    right: 65%;
+    background-color: #a0a9bc;
+    color: #1f2d49; 
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 9999;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: 1px solid rgba(0,0,0,.15);
+    box-shadow: 2px 10px 12px 2px rgba(0,0,0,.175);
+}
+
+#suggest-div-show span {
+    display: block;
+    padding: 4px 3px 4px 10px;
+    cursor: default;
+    min-width: 200px;
+}
+
+#suggest-div-show span:hover {
+    background-color: #d5d9f2;
+}
+
