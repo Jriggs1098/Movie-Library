@@ -9,7 +9,7 @@
 class Omdb {
     
     //Request url variable.
-    private static $request_url = 'omdbapi.com/?apikey=c261a98a&';
+    private static $request_url = 'omdbapi.com/?apikey=ApiKeyHere';
 
     //Class instance.  
     private static $instance = null;
